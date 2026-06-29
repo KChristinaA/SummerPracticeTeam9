@@ -1,4 +1,4 @@
-package ru.itis.example.summerpractice.Kristina
+package ru.itis.example.summerpractice.Kristina.firstday
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

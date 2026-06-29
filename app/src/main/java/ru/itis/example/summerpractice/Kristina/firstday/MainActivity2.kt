@@ -1,7 +1,8 @@
-package ru.itis.example.summerpractice.Kristina
+package ru.itis.example.summerpractice.Kristina.firstday
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import kotlin.text.iterator
 
 class MainActivity2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
