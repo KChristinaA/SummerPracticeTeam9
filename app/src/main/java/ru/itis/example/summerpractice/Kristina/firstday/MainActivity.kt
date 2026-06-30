@@ -10,17 +10,15 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun analyzeIntList(input: List<Int>) {
-        var minNum: Int = input.get(0)
-        var maxNum: Int = input.get(0)
-        var sumOfNum: Int = 0
-        var oddNumCounter: Int = 0
-        var evenNumCounter: Int = 0
-        for (num in input) {
-            if (num < minNum) minNum = num
-            if (num > maxNum) maxNum = num
+        val minNum = input.min()
+        val maxNum = input.max()
+        val sumOfNum = input.sum()
+        var oddNumCounter = 0
+        var evenNumCounter = 0
+        input.forEach { num ->
             if (num % 2 != 0) oddNumCounter++ else evenNumCounter++
-            sumOfNum += num
         }
+
         println("TEST-TAG Минимальное: $minNum")
         println("TEST-TAG Максимальное: $maxNum")
         println("TEST-TAG Сумма: $sumOfNum")
